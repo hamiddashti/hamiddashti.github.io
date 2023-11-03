@@ -198,3 +198,15 @@ a {
   /* If your background isn't white and you want the text to match the rest of the page you might use color: inherit; */
 }
 /* ... End of Hidden Links ... */
+
+/* ... section styles ... */
+.section {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*... Timeline ...*/
+.timeline {
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
