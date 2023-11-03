@@ -1,0 +1,66 @@
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusted the justification to space-between */
+  margin-bottom: 40px;
+}
+
+.project-info {
+  /* Adjust the flex value to control the space allocation */
+  flex: 3;
+  padding-right: 20px;
+}
+
+.project-image {
+  flex: 3; /* You can adjust this value to give more or less space for the image */
+  padding-left: 20px; /* Added padding to separate the text from the image */
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width as necessary */
+  border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+  }
+
+  .project-image {
+    order: 1; /* This will move the image above the text on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .project-info,
+  .project-image {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-links a:hover {
+  background-color: #eaeaea;
+}

@@ -1,0 +1,38 @@
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.project-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin-top: 20px;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+}
