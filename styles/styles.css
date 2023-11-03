@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav,
+  footer {
+    text-align: center;
+    display: block;
+  }
+}
+/* ... existing styles ... */
+
+.social-link i {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  font-size: 24px; /* Adjust size if needed */
+  vertical-align: middle;
+  color: white; /* You can change this to any color you desire */
+}
+/* ... remaining styles ... */
+a {
+  text-decoration: none;
+}
+
+.social-media-logos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Existing styles ... */
+/* Existing styles */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #333; /* A green background */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px; /* Rounded corners */
+  overflow: hidden; /* Ensures the rounded corners are maintained */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px); /* Starts the menu a bit lower */
+  transition: all 0.3s ease; /* Smooth transition for other properties */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1; /* Fully opaque */
+  visibility: visible;
+  transform: translateY(0px); /* Resets to original position */
+}
+
+/* Responsive adjustments might be necessary here depending on the rest of your design */
+@media screen and (max-width: 768px) {
+  .dropdown-content {
+    position: relative; /* Adjusts position for mobile devices */
+  }
+}
+
+/* End of New Styles */
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center image in the container */
+  align-items: center; /* Center image vertically */
+  margin-bottom: 20px; /* Add some spacing below the image */
+}
+
+.profile-image {
+  max-width: 150px; /* Maximum width of your photo */
+  border-radius: 50%; /* Make the image round */
+  border: 3px solid white; /* Optional: Add a border around your photo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.intro-title {
+  display: block; /* Makes the span behave like a block-level element */
+  font-size: 1.5em; /* Adjust as needed to make the font larger */
+  margin-top: 1em; /* Adds some space between the two lines */
+}
