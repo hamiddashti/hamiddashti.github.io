@@ -25,7 +25,7 @@
           />
         </div>
         <div class="header-content">
-          <h1><a href="/">Hamid Dashti</a></h1>
+          <h1><a href="../index.html" class="hidden-link">Hamid Dashti</a></h1>
 
           <p class="introduction">
             Postdoctoral Research Associate at UW-Madison
@@ -36,21 +36,21 @@
 
           <div class="social-links">
             <a
-              href="https://github.com/your_username"
+              href="https://github.com/hamiddashti"
               target="_blank"
               class="social-link"
             >
               <i class="fab fa-github"></i>
             </a>
             <a
-              href="https://scholar.google.com/citations?user=your_id"
+              href="https://scholar.google.com/citations?user=4PNlO6kAAAAJ&hl=en"
               target="_blank"
               class="social-link"
             >
               <i class="fas fa-graduation-cap"></i>
             </a>
             <a
-              href="https://linkedin.com/in/your_username"
+              href="https://linkedin.com/in/hamid-dashti-6274a4a4/"
               target="_blank"
               class="social-link"
             >
@@ -63,8 +63,8 @@
         <div class="dropdown">
           <button class="dropbtn">Download</button>
           <div class="dropdown-content">
-            <a href="path_to_resume.pdf" download>Resume</a>
-            <a href="path_to_cv.pdf" download>CV</a>
+            <a href="../files/Resume_HD.pdf" download>Resume</a>
+            <a href="../files/CV_Oct23.pdf" download>CV</a>
           </div>
         </div>
         <a href="../pages/experience-education.html">Experience/Education</a>
@@ -73,18 +73,48 @@
         <a href="../pages/contact.html">Contact Me</a>
       </nav>
     </header>
-    <div class="summary">
-      <h2>About me</h2>
+    <!-- Summary Section -->
+    <div class="section">
+      <h2 style="color: red">Who I am:</h2>
       <p>
-        I am a postdoctoral research associate at the University of
-        Wisconsin-Madison. I am interested in remote sensing, geospatial
-        analysis, and machine learning. I am currently working on the
-        development of a machine learning-based algorithm for the estimation of
-        crop yield using satellite data. I am also working on the development of
-        a machine learning-based algorithm for the estimation of crop yield
-        using satellite data. I am also working on the development of a machine
-        learning-based algorithm for the estimation of crop yield using
-        satellite data.
+        I am a geospatial scientist with expertise in remote sensing and
+        geospatial data science. I am currently a postdoctoral research
+        associate at the University of Wisconsin-Madison, and I have previously
+        held postdoctoral positions at the University of Arizona and Boise State
+        University. My research focuses on using remote sensing and geospatial
+        data science to study climate change and its impacts on nature and
+        society.
+      </p>
+    </div>
+
+    <!-- What I Do Section -->
+    <div class="section">
+      <h2 style="color: red">What I Do:</h2>
+
+      <!-- Geospatial/Environmental Data Science Sub-section -->
+      <h3>Geospatial/Environmental Data Science</h3>
+      <p>
+        I use machine learning to interpret and predict from big geospatial
+        datasets. I have used this approach to investigate land use and land
+        cover change, assess the impacts of disturbances, and predict land
+        surface variables from remote sensing data. I primarily use Python for
+        data handling and model fitting, but I am also proficient in R and
+        Fortran.
+      </p>
+
+      <!-- Theoretical/Applied Remote Sensing Sub-section -->
+      <h3>Theoretical/Applied Remote Sensing</h3>
+      <p>
+        I use 1-D and 3-D radiative transfer modeling to simulate light
+        interaction with land surface materials. I then use numerical inversion
+        techniques to estimate land surface materials from these simulations. I
+        have extensive experience with optical (hyperspectral/multispectral),
+        lidar (point clouds and full-waveform), and solar induced fluorescence
+        data from a variety of platforms, including ground-based spectrometers,
+        terrestrial laser scanners, drones, airplanes, and satellites. In
+        addition to developing and applying new remote sensing algorithms, I
+        also integrate remote sensing data with Earth system models, field data,
+        and theory to gain insights into real-world problems.
       </p>
     </div>
 
@@ -92,12 +122,28 @@
     <div class="skills-section">
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li>Remote Sensing</li>
         <li>Geospatial Data Science</li>
-        <li>Climate Change Research</li>
-        <li>Statistical Analysis</li>
-        <li>Machine Learning</li>
-        <li>Python & R Programming</li>
+        <ul>
+          <li>
+            Python
+            <ul>
+              <li>Geospatial: xarray, geopandas, gdal, rasterio,</li>
+              <li>ML: Scikit-learn, PyTorch, TensorFlow</li>
+              <li>Parallel and scaling: Dask</li>
+              <!-- You can continue adding more sublist items here -->
+              <li>R, Fortran, Matlab</li>
+            </ul>
+          </li>
+
+          <li>
+            Remote Sensing (hyperspectral; multispectral; lidar; fluorescence)
+          </li>
+
+          <!-- You can add other list items here -->
+        </ul>
+        <li>High performance Computing</li>
+        <li>Clouds (GEE, AWS, AZURE)</li>
+        <li>Climate Change and its impacts</li>
         <!-- Add more skills as needed -->
       </ul>
     </div>

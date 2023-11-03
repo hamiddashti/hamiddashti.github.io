@@ -190,3 +190,11 @@ a {
   }
 }
 /* ... End of Skills ... */
+
+/* Hidden Links */
+.hidden-link {
+  text-decoration: none; /* Removes the underline from links */
+  color: white; /* Sets the color to white */
+  /* If your background isn't white and you want the text to match the rest of the page you might use color: inherit; */
+}
+/* ... End of Hidden Links ... */
