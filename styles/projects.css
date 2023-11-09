@@ -23,8 +23,7 @@
 }
 
 .project-image img {
-  width: 100%;
-  max-width: 400px; /* Adjust the max-width as necessary */
+  width: 600px;
   border-radius: 8px;
 }
 
@@ -43,10 +42,6 @@
   .project-image {
     padding-right: 0;
     padding-left: 0;
-  }
-
-  .project-image img {
-    max-width: 100%;
   }
 }
 
