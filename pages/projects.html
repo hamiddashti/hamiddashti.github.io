@@ -15,16 +15,21 @@
       rel="stylesheet"
     />
   </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BQZPF62XD4');
-</script>
   <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BQZPF62XD4");
+    </script>
+
     <!-- Include the same header as index.html for consistency -->
     <header>
       <div class="profile-header">
@@ -40,10 +45,9 @@
           <p class="introduction">
             Postdoctoral Research Associate at UW-Madison
             <span class="skills"
-              >Remote Sensing | Geospatial Data Science | Climate Change |
-            </span>
+              >Remote Sensing | Geospatial Data Science | Climate Change |</span
+            >
           </p>
-
           <div class="social-links">
             <a
               href="https://github.com/hamiddashti"
@@ -92,59 +96,106 @@
           <!-- Project 1 -->
           <div class="project-item">
             <div class="project-info">
-              <h3>
-                Disturbance recovery under climate change: what it was or what
-                it could have been?
-              </h3>
+              <h3>NASA ABoVE: The Arctic-Boreal Vulnerability Experiment</h3>
               <p>
-                Climate change is rapidly shifting disturbance regimes in
-                terrestrial ecosystems, requiring a good understanding of
-                ecosystem recovery time to inform mitigation and adaptation
-                strategies. We investigate two perspectives on recovery: the
-                conventional view, which defines recovery as a return to the
-                pre-disturbance state assuming ecosystem stationarity, and the
-                counterfactual view, which defines recovery as reaching the
-                state the ecosystem would have been in if the disturbance had
-                not occurred. Using a case study of the greening of the Arctic
-                and Boreal regions, we show that the counterfactual recovery
-                time is more than twice that of the conventional view due to the
-                region's general greening. This suggests that climate change is
-                imposing non-stationary dynamics on ecosystems, which should be
-                considered in recovery time estimates. We advocate for the
-                adoption of the counterfactual definition of recovery, as it is
-                more realistic and aligns better with informed decision-making
-                and conservation efforts.
+                Over the past few years, I've been involved in the
+                <a href="https://above.nasa.gov/"> NASA ABoVE. </a>This region
+                is warming at an alarming rate, two to three times faster than
+                the global average. ABoVE's goal is to understand how vulnerable
+                and resilient these ecosystems are to environmental changes.
               </p>
-              <div class="project-links">
-                <a
-                  href="https://github.com/hamiddashti/greeness"
+              <p>
+                During my postdoctoral research at the University of Arizona and
+                my current position at the University of Wisconsin-Madison, I've
+                used satellite remote sensing and Earth system models to study
+                the region. Here are some highlights of my research activities:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>
+                    Land use and Land-Cover Change (LULCC) and Surface Energy
+                    Balance:</strong
+                  >
+                  Using Landsat and MODIS satellite data, I studied how LULCC
+                  affects the surface energy balance (link). I calculated the
+                  sensitivity of albedo, land surface temperature, and
+                  evapotranspiration to various changes in land cover.
+                </li>
+                <a href="https://www.mdpi.com/2072-4292/12/21/3553"
+                  >Download the manuscript</a
+                >
+                <li>
+                  <strong>Disturbance and Recovery Processes:</strong> Using a
+                  novel counterfactual analysis in time series (link) and
+                  Landsat data, I showed that conventional definitions of
+                  recovery (bouncing back to pre-disturbance conditions)
+                  significantly underestimate recovery time because they don't
+                  consider the influence of climate change. This manuscript is
+                  under review.
+                </li>
+
+                <li>
+                  <strong
+                    >Data Assimilation to Improve Land Model
+                    Simulations:</strong
+                  >
+                  I contributed to assimilating satellite-derived Leaf Area
+                  Index (LAI) data from MODIS into the Community Land Model
+                  (CLM) using an Ensemble Adjustment Kalman Filter. This
+                  improved CLM's performance in simulating carbon and
+                  hydrological cycles. This manuscript is under review.
+                </li>
+                <li>
+                  <strong
+                    >Development of a New Vegetation Biomass Dataset:</strong
+                  >
+                  Our team developed a new vegetation biomass dataset for the
+                  region using Vegetation Optical Depth (VOD) microwave
+                  satellite data. This dataset captures interannual variability
+                  in biomass, which is often missing in other datasets. This
+                  manuscript is under review.
+                </li>
+              </ul>
+
+              <p>
+                <strong>Skills:</strong> Time series analyses, Python (Xarray,
+                Rbeast, Dask), R(CasusalImpact), HPC/HTC
+              </p>
+
+              <!-- <div class="project-links"> -->
+              <!-- <a
+                  href="https://github.com/hamiddashti/earthlab/tree/main/data"
                   target="_blank"
                   >Data</a
                 >
                 <a
-                  href="https://github.com/hamiddashti/greeness"
+                  href="https://github.com/hamiddashti/earthlab/blob/main/notebooks/00-hd-estimate-nitrogen.ipynb"
                   target="_blank"
                   >Code</a
-                >
-                <a
-                  href="https://github.com/hamiddashti/greeness"
+                > -->
+              <!-- <a
+                  href="https://ieeexplore.ieee.org/document/8633855"
                   target="_blank"
                   >Manuscript</a
-                >
-              </div>
+                > -->
+
+              <!-- </div> -->
             </div>
 
             <div class="project-image">
               <img src="../images/greening.jpeg" alt="Project 1" />
             </div>
+
+            <!-- Closing tag for Project 2 -->
           </div>
 
-          <!-- Repeat this block for each project -->
           <!-- Project 2 -->
           <div class="project-item">
             <div class="project-info">
               <h3>
-                Mapping Plant Nitrogen Using Hyperspectral and Machine Learning (ML Example)
+                Characterzing Drylands Using Satellite Remote Sensing and Earth
+                System Modeling
               </h3>
               <p>
                 The main goal of this project is to create a nitrogen map of
@@ -157,67 +208,46 @@
                 were collected from multiple shrubs within 10x10 meter plots in
                 Idaho and California.
               </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/hamiddashti/earthlab/tree/main/data"
+                  target="_blank"
+                  >Data</a
+                >
+                <a
+                  href="https://github.com/hamiddashti/earthlab/blob/main/notebooks/00-hd-estimate-nitrogen.ipynb"
+                  target="_blank"
+                  >Code</a
+                >
+                <a
+                  href="https://ieeexplore.ieee.org/document/8633855"
+                  target="_blank"
+                  >Manuscript</a
+                >
+              </div>
             </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/hamiddashti/earthlab/tree/main/data"
-                target="_blank"
-                >Data</a
-              >
-              <a
-                href="https://github.com/hamiddashti/earthlab/blob/main/notebooks/00-hd-estimate-nitrogen.ipynb"
-                target="_blank"
-                >Code</a
-              >
-              <a
-                href="https://ieeexplore.ieee.org/document/8633855"
-                target="_blank"
-                >Manuscript</a
-              >
-            </div>
-          </div>
             <div class="project-image">
-              <img src="../images/satellite-remote-sensing.jpg" alt="Project 2" />
+              <img
+                src="../images/satellite-remote-sensing.jpg"
+                alt="Project 2"
+              />
             </div>
+            <!-- Closing tag for Project 2 -->
           </div>
 
-          <!-- ... project3 -->
+          <!-- Project 3 -->
           <div class="project-item">
             <div class="project-info">
               <h3>Gradually updating projects as I find more time!</h3>
               <p>
-                Meanwhile you can check the publications page for more updates. 
+                Meanwhile, you can check the publications page for more updates.
               </p>
             </div>
             <div class="project-image">
-              <img src="../images/tmp.jpg" alt="Project 2" />
+              <img src="../images/tmp.jpg" alt="Project 3" />
             </div>
+            <!-- Closing tag for Project 3 -->
           </div>
-          <!-- ... more projects uncomment the block below -->
-          <!-- ... project-n -->
-          <!--
-            <div class="project-item">
-                <div class="project-info">
-                <h3>Project Title n</h3>
-                <p>
-                    Short description of Project 2. An overview of what the project
-                    was about and the technologies used in this project. Short
-                    description of Project 1. An overview of what the project was
-                    about and the technologies used in this project.Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                </div>
-                <div class="project-image">
-                <img src="../images/project-1.jpeg" alt="Project 2" />
-                </div>
-            </div>
-            -->
         </div>
       </section>
     </main>
