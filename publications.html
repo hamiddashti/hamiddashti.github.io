@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications · Hamid Dashti</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BQZPF62XD4');
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Hamid Dashti</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div class="container">
+
+      <div class="page-hero">
+        <h1 style="font-size:1.75rem; font-weight:700; letter-spacing:-0.02em;">Publications</h1>
+        <p class="text-muted mt-1">
+          Also see my
+          <a href="https://scholar.google.com/citations?user=4PNlO6kAAAAJ&hl=en" target="_blank">Google Scholar profile</a>
+          for citation metrics.
+        </p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="pub-filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="published">Published</button>
+        <button class="filter-btn" data-filter="under review">Under Review</button>
+        <button class="filter-btn" data-filter="accepted">Accepted</button>
+      </div>
+
+      <!-- Publication list rendered by JS -->
+      <div class="pub-list" id="pub-list">
+        <p class="text-muted">Loading publications…</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      © <span id="yr"></span> Hamid Dashti ·
+      <a href="mailto:ahangar.hamid@gmail.com">ahangar.hamid@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ── Load and render publications ──────────────────────────────────
+    let allPubs = [];
+
+    function statusLabel(s) {
+      const map = {
+        'published':    { text: 'Published',    color: '#16a34a', bg: '#f0fdf4' },
+        'under review': { text: 'Under Review', color: '#d97706', bg: '#fffbeb' },
+        'accepted':     { text: 'Accepted',     color: '#2563eb', bg: '#eff6ff' },
+      };
+      return map[s] || { text: s, color: '#64748b', bg: '#f1f5f9' };
+    }
+
+    function renderPubs(pubs) {
+      const list = document.getElementById('pub-list');
+      if (!pubs.length) {
+        list.innerHTML = '<p class="text-muted">No publications found.</p>';
+        return;
+      }
+      list.innerHTML = pubs.map((p, i) => {
+        const s = statusLabel(p.status);
+        const link = p.url
+          ? `<a href="${p.url}" target="_blank" class="pub-link">DOI ↗</a>`
+          : '';
+        return `
+          <div class="pub-card" data-status="${p.status}">
+            <div class="pub-title">${i + 1}. ${p.title}</div>
+            <div class="pub-authors">${p.authors}</div>
+            <div class="pub-meta">
+              <span class="pub-year-badge">${p.year}</span>
+              <span><em>${p.journal}</em></span>
+              <span style="
+                background:${s.bg}; color:${s.color};
+                font-size:0.75rem; font-weight:600;
+                padding:0.15rem 0.5rem; border-radius:4px;
+              ">${s.text}</span>
+              ${link}
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // Filter logic
+    document.getElementById('filters').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      const filtered = f === 'all' ? allPubs : allPubs.filter(p => p.status === f);
+      renderPubs(filtered);
+    });
+
+    // Fetch data
+    fetch('data/publications.json')
+      .then(r => r.json())
+      .then(data => {
+        allPubs = data.sort((a, b) => b.year - a.year);
+        renderPubs(allPubs);
+      })
+      .catch(() => {
+        document.getElementById('pub-list').innerHTML =
+          '<p class="text-muted">Could not load publications.</p>';
+      });
+  </script>
+
+</body>
+</html>

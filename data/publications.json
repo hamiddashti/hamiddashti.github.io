@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Rethinking Ecosystems Disturbance Recovery: what it was or what it could have been?",
+    "authors": "Dashti, H., Chen, M., Smith, W. K., Zhao, K., & Moore, D. J. P.",
+    "journal": "Global Change Biology",
+    "year": 2023,
+    "doi": "",
+    "url": "",
+    "status": "under review"
+  },
+  {
+    "title": "Underestimation of the impact of land cover change on the biophysical environment of the Arctic and Boreal Region of North America",
+    "authors": "Dashti, H., Smith, W. K., Huo, X., Fox, A., Javadian, M., Devine, C. J., Behrangi, A., & Moore, D. J. P.",
+    "journal": "Environmental Research Letters",
+    "year": 2023,
+    "doi": "",
+    "url": "",
+    "status": "under review"
+  },
+  {
+    "title": "Applied soft classes and fuzzy confusion in a patchwork semi-arid ecosystem: Stitching together classification techniques to preserve ecologically-meaningful information",
+    "authors": "Enterkine, J., Dashti, H., Caughlin, T. T., & Glenn, N. F.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2023,
+    "doi": "",
+    "url": "",
+    "status": "accepted"
+  },
+  {
+    "title": "Uncertain spatial pattern of future land use and land cover change and its impacts on terrestrial carbon cycle over the Arctic–Boreal region of North America",
+    "authors": "Luo, M., Li, F., Hao, D., Zhu, Q., Dashti, H., & Chen, M.",
+    "journal": "Earth's Future",
+    "year": 2023,
+    "doi": "10.1029/2023EF003648",
+    "url": "https://doi.org/10.1029/2023EF003648",
+    "status": "published"
+  },
+  {
+    "title": "Underestimation of the impact of land cover change on the biophysical environment of the Arctic and Boreal Region of North America",
+    "authors": "Dashti, H., Smith, W. K., Huo, X., Fox, A., Javadian, M., Devine, C. J., Behrangi, A., & Moore, D. J. P.",
+    "journal": "Environmental Research Letters",
+    "year": 2022,
+    "doi": "10.1088/1748-9326/ac8da7",
+    "url": "https://doi.org/10.1088/1748-9326/ac8da7",
+    "status": "published"
+  },
+  {
+    "title": "Assimilation of global satellite leaf area estimates reduces modeled global carbon uptake and energy loss by terrestrial ecosystems",
+    "authors": "Fox, A. M., Huo, X., Hoar, T. J., Dashti, H., Smith, W. K., MacBean, N., et al.",
+    "journal": "Journal of Geophysical Research: Biogeosciences",
+    "year": 2022,
+    "doi": "10.1029/2022JG006830",
+    "url": "https://doi.org/10.1029/2022JG006830",
+    "status": "published"
+  },
+  {
+    "title": "Airborne and spaceborne lidar reveal trends and patterns of functional diversity in a semi-arid ecosystem",
+    "authors": "Ilangakoon, N., Glenn, N. F., Schneider, F. D., Dashti, H., Hancock, S., Spaete, L., & Goulden, T.",
+    "journal": "Frontiers in Remote Sensing",
+    "year": 2021,
+    "doi": "10.3389/frsen.2021.743320",
+    "url": "https://doi.org/10.3389/frsen.2021.743320",
+    "status": "published"
+  },
+  {
+    "title": "NASA's Surface Biology and Geology Designated Observable: A perspective on surface imaging algorithms",
+    "authors": "Cawse-Nicholson, K., Townsend, P. A., Schimel, D., Assiri, A. M., Blake, P. L., Buongiorno, M. F., et al.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2021,
+    "doi": "10.1016/j.rse.2021.112349",
+    "url": "https://doi.org/10.1016/j.rse.2021.112349",
+    "status": "published"
+  },
+  {
+    "title": "Understanding the effect of fire on vegetation composition and gross primary production in a semi-arid shrubland ecosystem using the Ecosystem Demography (EDv2.2) model",
+    "authors": "Pandit, K., Dashti, H., Hudak, A. T., Glenn, N. F., Flores, A. N., & Shinneman, D. J.",
+    "journal": "Biogeosciences Discussions",
+    "year": 2021,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Performance of the ecosystem demography model (EDv2.2) in simulating gross primary production capacity and activity in a dryland study area",
+    "authors": "Dashti, H., Pandit, K., Glenn, N. F., Shinneman, D. J., Flerchinger, G. N., Hudak, A. T., de Graaf, M. A., Flores, A., Ustin, S., Ilangakoon, N., & Fellows, A. W.",
+    "journal": "Agricultural and Forest Meteorology",
+    "year": 2021,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Regional-scale dryland vegetation classification with an integrated lidar-hyperspectral approach",
+    "authors": "Dashti, H., Spaete, L., Roberts, D., Enterkine, J., Flores, A. N., Ustin, S. L., & Mitchell, J. J.",
+    "journal": "Remote Sensing",
+    "year": 2019,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Developing and optimizing shrub parameters representing sagebrush (Artemisia spp.) ecosystems in the northern Great Basin using the Ecosystem Demography (EDv2.2) model",
+    "authors": "Pandit, K., Dashti, H., Glenn, N. F., Flores, A. N., Maguire, K. C., Shinneman, D. J., Fellows, A. W.",
+    "journal": "Geoscientific Model Development",
+    "year": 2019,
+    "doi": "10.5194/gmd-12-4585-2019",
+    "url": "https://doi.org/10.5194/gmd-12-4585-2019",
+    "status": "published"
+  },
+  {
+    "title": "Constraining plant functional types in a semi-arid ecosystem with waveform lidar",
+    "authors": "Ilangakoon, N. T., Glenn, N. F., Dashti, H., Painter, T. H., Mikesell, T. D., Spaete, L. P., Mitchell, J. J., & Shannon, K.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2018,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Inversion of a radiative transfer model for estimation of rice canopy chlorophyll content",
+    "authors": "Darvishzadeh, R., Matkan, A. A., & Dashti, A.",
+    "journal": "IEEE Journal of Selected Topics in Earth Observations and Remote Sensing",
+    "year": 2011,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  }
+]

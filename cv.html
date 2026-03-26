@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV · Hamid Dashti</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BQZPF62XD4');
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Hamid Dashti</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div class="container">
+
+      <div class="cv-container">
+        <div class="page-hero" style="margin-bottom:1.25rem;">
+          <h1 style="font-size:1.75rem; font-weight:700; letter-spacing:-0.02em;">Curriculum Vitae</h1>
+        </div>
+
+        <div class="cv-toolbar">
+          <a href="files/CV.pdf" download class="btn btn-primary">
+            ↓ Download PDF
+          </a>
+          <a href="files/CV.pdf" target="_blank" class="btn btn-outline">
+            Open in new tab ↗
+          </a>
+        </div>
+
+        <!-- Embedded PDF viewer -->
+        <iframe
+          class="cv-embed"
+          src="files/CV.pdf"
+          title="Hamid Dashti CV"
+        ></iframe>
+
+        <!-- Fallback for browsers that block PDF embeds -->
+        <p class="text-muted mt-2" style="font-size:0.85rem;">
+          If the PDF doesn't load above,
+          <a href="files/CV.pdf" target="_blank">click here to open it directly</a>.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      © <span id="yr"></span> Hamid Dashti ·
+      <a href="mailto:ahangar.hamid@gmail.com">ahangar.hamid@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Hamid Dashti</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BQZPF62XD4');
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Hamid Dashti</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div class="container">
+
+      <div class="page-hero">
+        <h1 style="font-size:1.75rem; font-weight:700; letter-spacing:-0.02em;">Projects</h1>
+        <p class="text-muted mt-1">
+          Research outputs including interactive maps, notebooks, and visualizations.
+        </p>
+      </div>
+
+      <!-- Filter by tag -->
+      <div class="pub-filters" id="tag-filters">
+        <button class="filter-btn active" data-tag="all">All</button>
+        <!-- Tags injected dynamically -->
+      </div>
+
+      <!-- Project grid rendered by JS -->
+      <div class="projects-grid" id="projects-grid">
+        <p class="text-muted">Loading projects…</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== EMBED MODAL ===== -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span id="modal-title">Project</span>
+        <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-content">
+        <iframe id="modal-iframe" src="" title="Project embed" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      © <span id="yr"></span> Hamid Dashti ·
+      <a href="mailto:ahangar.hamid@gmail.com">ahangar.hamid@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    let allProjects = [];
+
+    // ── Render cards ──────────────────────────────────────────────────
+    function renderProjects(projects) {
+      const grid = document.getElementById('projects-grid');
+      if (!projects.length) {
+        grid.innerHTML = '<p class="text-muted">No projects found.</p>';
+        return;
+      }
+      grid.innerHTML = projects.map((p, i) => {
+        // Thumbnail
+        let thumb = '';
+        if (p.image) {
+          thumb = `<img src="${p.image}" alt="${p.title}" class="project-thumb" loading="lazy" />`;
+        } else {
+          thumb = `<div class="project-thumb-placeholder">🗺️</div>`;
+        }
+
+        // Tags
+        const tags = (p.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+
+        // Links
+        const links = (p.links || [])
+          .filter(l => l.url)
+          .map(l => `<a href="${l.url}" target="_blank" class="btn btn-outline">${l.label} ↗</a>`)
+          .join('');
+
+        // Embed button
+        const embedBtn = (p.type === 'embed' && p.embed)
+          ? `<button class="btn btn-primary" onclick="openModal(${i})">▶ Open Interactive</button>`
+          : '';
+
+        return `
+          <div class="project-card">
+            ${thumb}
+            <div class="project-body">
+              <div class="project-tags">${tags}</div>
+              <div class="project-title">${p.title}</div>
+              <div class="project-desc">${p.description}</div>
+              <div class="project-links">
+                ${embedBtn}
+                ${links}
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // ── Tag filter ────────────────────────────────────────────────────
+    function buildTagFilters(projects) {
+      const tags = [...new Set(projects.flatMap(p => p.tags || []))].sort();
+      const container = document.getElementById('tag-filters');
+      tags.forEach(t => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.tag = t;
+        btn.textContent = t;
+        container.appendChild(btn);
+      });
+    }
+
+    document.getElementById('tag-filters').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      document.querySelectorAll('#tag-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const tag = btn.dataset.tag;
+      const filtered = tag === 'all'
+        ? allProjects
+        : allProjects.filter(p => (p.tags || []).includes(tag));
+      renderProjects(filtered);
+    });
+
+    // ── Modal ─────────────────────────────────────────────────────────
+    function openModal(i) {
+      const p = allProjects[i];
+      document.getElementById('modal-title').textContent = p.title;
+      document.getElementById('modal-iframe').src = p.embed;
+      document.getElementById('modal').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('open');
+      document.getElementById('modal-iframe').src = '';
+    }
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    document.getElementById('modal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // ── Fetch data ────────────────────────────────────────────────────
+    fetch('data/projects.json')
+      .then(r => r.json())
+      .then(data => {
+        allProjects = data;
+        buildTagFilters(data);
+        renderProjects(data);
+      })
+      .catch(() => {
+        document.getElementById('projects-grid').innerHTML =
+          '<p class="text-muted">Could not load projects.</p>';
+      });
+  </script>
+
+</body>
+</html>

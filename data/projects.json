@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Arctic & Boreal Land Cover Change",
+    "description": "Mapping and quantifying land cover change across the Arctic and Boreal region of North America using satellite remote sensing and machine learning. Includes biophysical impact analysis using CLM and WRF models.",
+    "tags": ["Remote Sensing", "Land Cover", "Arctic", "CLM"],
+    "image": "images/NASA_ABoVE.jpg",
+    "type": "image",
+    "links": [
+      { "label": "View Paper", "url": "https://doi.org/10.1088/1748-9326/ac8da7" },
+      { "label": "GitHub", "url": "https://github.com/hamiddashti" }
+    ]
+  },
+  {
+    "title": "Dryland Vegetation Classification — LiDAR + Hyperspectral",
+    "description": "Regional-scale classification of dryland vegetation in the northern Great Basin using an integrated LiDAR and hyperspectral approach. Airborne data were combined with machine learning classifiers to map plant functional types.",
+    "tags": ["LiDAR", "Hyperspectral", "Machine Learning", "Dryland"],
+    "image": "images/satellite-remote-sensing.jpg",
+    "type": "image",
+    "links": [
+      { "label": "View Paper", "url": "" },
+      { "label": "GitHub", "url": "https://github.com/hamiddashti" }
+    ]
+  },
+  {
+    "title": "Interactive Map — Example",
+    "description": "An example of an embedded interactive Leaflet map. Replace the 'embed' field with a URL to your hosted map (e.g., a GitHub Pages map, Google Earth Engine app, or ArcGIS Online app).",
+    "tags": ["Interactive", "Leaflet", "Geospatial"],
+    "image": "",
+    "type": "embed",
+    "embed": "https://hamiddashti.github.io",
+    "links": [
+      { "label": "Open Full Screen", "url": "https://hamiddashti.github.io" }
+    ]
+  }
+]
