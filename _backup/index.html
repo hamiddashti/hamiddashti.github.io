@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-BQZPF62XD4");
+  </script>
+  <body>
+    <header>
+      <div class="profile-header">
+        <div class="image-container">
+          <img
+            src="../images/profile_resized.jpeg"
+            alt="Hamid Dashti"
+            class="profile-image"
+          />
+        </div>
+        <div class="header-content">
+          <h1><a href="../index.html" class="hidden-link">Hamid Dashti</a></h1>
+
+          <p class="introduction">
+            Postdoctoral Research Associate at UW-Madison
+            <span class="skills"
+              >Remote Sensing | Geospatial Data Science | Climate Change |
+            </span>
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/hamiddashti"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=4PNlO6kAAAAJ&hl=en"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/hamid-dashti-6274a4a4/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">Resume/CV</button>
+          <div class="dropdown-content">
+            <a href="../files/Resume.pdf" download>Resume</a>
+            <a href="../files/CV.pdf" download>CV</a>
+          </div>
+        </div>
+        <a href="../pages/experience-education.html">Experience/Education</a>
+        <a href="../pages/publications.html">Publications</a>
+        <a href="../pages/projects.html">Projects</a>
+        <a href="../pages/contact.html">Contact Me</a>
+      </nav>
+    </header>
+    <!-- Summary Section -->
+    <div class="section">
+      <h2 style="color: red">Who I am:</h2>
+      <p>
+        I am a geospatial scientist with expertise in remote sensing and
+        geospatial data science. I am currently a postdoctoral research
+        associate at the University of Wisconsin-Madison, and I have previously
+        held postdoctoral positions at the University of Arizona and Boise State
+        University. My research focuses on using remote sensing and geospatial
+        data science to study climate change and its impacts on nature and
+        society.
+      </p>
+    </div>
+
+    <!-- What I Do Section -->
+    <div class="section">
+      <h2 style="color: red">What I Do:</h2>
+
+      <!-- Geospatial/Environmental Data Science Sub-section -->
+      <h3>Geospatial/Environmental Data Science</h3>
+      <p>
+        I use machine learning to interpret and predict from big geospatial
+        datasets. I have used ML to investigate land use and land cover change,
+        assess the impacts of disturbances, and predict land surface variables
+        from remote sensing data. I primarily use Python for data handling and
+        model fitting, but I am also proficient in R.
+      </p>
+
+      <!-- Earth system modeling -->
+      <h3>Earth system modeling</h3>
+      <p>
+        One of my key areas of expertise is running large and complex
+        process-based models. During my career, I have worked with various
+        climate and Earth system models, including CLM, ED-V2, WRF, DART (data
+        assimilation), and GCAM. I have experience processing the large outputs
+        of models such as the CMIP project. My interests lie in integrating
+        these models with other data sources, such as remote sensing
+        observations, eddy covariance tower observations, field data, and
+        ecological theory, to study the carbon cycle, land surface radiation
+        budget, disturbances, land use/land cover change, and other Earth system
+        processes.
+      </p>
+
+      <!-- Theoretical/Applied Remote Sensing Sub-section -->
+      <h3>Theoretical/Applied Remote Sensing</h3>
+      <p>
+        I use 1-D and 3-D radiative transfer modeling to simulate light
+        interaction with land surface materials. I then use numerical inversion
+        techniques to estimate land surface materials from these simulations. I
+        have extensive experience with optical (hyperspectral/multispectral),
+        lidar (point clouds and full-waveform), and solar induced fluorescence
+        data from a variety of platforms, including ground-based spectrometers,
+        terrestrial laser scanners, drones, airplanes, and satellites. In
+        addition to developing and applying new remote sensing algorithms, I
+        also integrate remote sensing data with Earth system models, field data,
+        and theory to gain insights into real-world problems.
+      </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Geospatial Data Science</li>
+        <ul>
+          <li>
+            Python
+            <ul>
+              <li>Geospatial: xarray, geopandas, gdal, rasterio,</li>
+              <li>ML: Scikit-learn, PyTorch, TensorFlow</li>
+              <li>Parallel and scaling: Dask</li>
+              <!-- You can continue adding more sublist items here -->
+              <li>R, Matlab, Shell</li>
+            </ul>
+          </li>
+
+          <li>
+            Remote Sensing (hyperspectral; multispectral; lidar; fluorescence)
+          </li>
+
+          <!-- You can add other list items here -->
+        </ul>
+        <li>High performance Computing</li>
+        <li>Clouds (GEE, AWS, AZURE)</li>
+        <li>Climate Change and its impacts</li>
+        <!-- Add more skills as needed -->
+      </ul>
+    </div>
+  </body>
+</html>

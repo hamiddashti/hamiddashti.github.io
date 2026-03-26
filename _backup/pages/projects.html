@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/projects.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BQZPF62XD4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BQZPF62XD4");
+    </script>
+
+    <!-- Include the same header as index.html for consistency -->
+    <header>
+      <div class="profile-header">
+        <div class="image-container">
+          <img
+            src="../images/profile_resized.jpeg"
+            alt="Hamid Dashti"
+            class="profile-image"
+          />
+        </div>
+        <div class="header-content">
+          <h1><a href="../index.html" class="hidden-link">Hamid Dashti</a></h1>
+          <p class="introduction">
+            Postdoctoral Research Associate at UW-Madison
+            <span class="skills"
+              >Remote Sensing | Geospatial Data Science | Climate Change |</span
+            >
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/hamiddashti"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=4PNlO6kAAAAJ&hl=en"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/hamid-dashti-6274a4a4/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">Download</button>
+          <div class="dropdown-content">
+            <a href="../files/Resume.pdf" download>Resume</a>
+            <a href="../files/CV.pdf" download>CV</a>
+          </div>
+        </div>
+        <a href="../pages/experience-education.html">Experience/Education</a>
+        <a href="../pages/publications.html">Publications</a>
+        <a href="../pages/projects.html">Projects</a>
+        <a href="../pages/contact.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects">
+        <div class="container">
+          <h2>Projects</h2>
+
+          <!-- Project 1 -->
+          <div class="project-item">
+            <div class="project-info">
+              <h3>NASA ABoVE: The Arctic-Boreal Vulnerability Experiment</h3>
+              <p>
+                Over the past few years, I've been involved in the
+                <a href="https://above.nasa.gov/about.html?"> NASA ABoVE. </a
+                >This region is warming at an alarming rate, two to three times
+                faster than the global average. ABoVE's goal is to understand
+                how vulnerable and resilient these ecosystems are to
+                environmental changes.
+              </p>
+              <p>
+                During my postdoctoral research at the University of Arizona and
+                my current position at the University of Wisconsin-Madison, I've
+                used satellite remote sensing and Earth system models to study
+                the region. Here are some highlights of my research activities:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>
+                    Land use and Land-Cover Change (LULCC) and Surface Energy
+                    Balance:</strong
+                  >
+                  Using Landsat and MODIS satellite data, I studied how LULCC
+                  affects the surface energy balance (link). I calculated the
+                  sensitivity of albedo, land surface temperature, and
+                  evapotranspiration to various changes in land cover.
+                </li>
+                <a
+                  href="https://iopscience.iop.org/article/10.1088/1748-9326/ac8da7/meta"
+                  >Download the manuscript</a
+                >
+                <li>
+                  <strong>Disturbance and Recovery Processes:</strong> Using a
+                  novel counterfactual analysis in time series (link) and
+                  Landsat data, I showed that conventional definitions of
+                  recovery (bouncing back to pre-disturbance conditions)
+                  significantly underestimate recovery time because they don't
+                  consider the influence of climate change. This manuscript is
+                  under review.
+                </li>
+
+                <li>
+                  <strong
+                    >Data Assimilation to Improve Land Model
+                    Simulations:</strong
+                  >
+                  I contributed to assimilating satellite-derived Leaf Area
+                  Index (LAI) data from MODIS into the Community Land Model
+                  (CLM) using an Ensemble Adjustment Kalman Filter. This
+                  improved CLM's performance in simulating carbon and
+                  hydrological cycles. This manuscript is under review.
+                </li>
+                <li>
+                  <strong
+                    >Development of a New Vegetation Biomass Dataset:</strong
+                  >
+                  Our team developed a new vegetation biomass dataset for the
+                  region using Vegetation Optical Depth (VOD) microwave
+                  satellite data. This dataset captures interannual variability
+                  in biomass, which is often missing in other datasets. This
+                  manuscript is under review.
+                </li>
+              </ul>
+
+              <p>
+                <strong>Skills:</strong> Time series analyses, Python (Xarray,
+                Rbeast, Dask), R(CasusalImpact), HPC/HTC
+              </p>
+
+              <!-- <div class="project-links"> -->
+              <!-- <a
+                  href="https://github.com/hamiddashti/earthlab/tree/main/data"
+                  target="_blank"
+                  >Data</a
+                >
+                <a
+                  href="https://github.com/hamiddashti/earthlab/blob/main/notebooks/00-hd-estimate-nitrogen.ipynb"
+                  target="_blank"
+                  >Code</a
+                > -->
+              <!-- <a
+                  href="https://ieeexplore.ieee.org/document/8633855"
+                  target="_blank"
+                  >Manuscript</a
+                > -->
+
+              <!-- </div> -->
+            </div>
+
+            <div class="project-image">
+              <img src="../images/NASA_ABoVE.jpg" alt="Project 1" />
+            </div>
+
+            <!-- Closing tag for Project 2 -->
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-item">
+            <div class="project-info">
+              <h3>
+                Characterzing Drylands Using Satellite Remote Sensing and Earth
+                System Modeling
+              </h3>
+              <p>
+                The main goal of this project is to create a nitrogen map of
+                shrublands in the western US using hyperspectral data. To
+                achieve this, we use Partial Least Square Regression (PLSR), a
+                machine learning technique. In this model, the spectral bands
+                serve as predictors (features), and the measured percent
+                nitrogen content is the target variable. Here is a brief
+                rationale for choosing PLSR for this project. The nitrogen data
+                were collected from multiple shrubs within 10x10 meter plots in
+                Idaho and California.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/hamiddashti/earthlab/tree/main/data"
+                  target="_blank"
+                  >Data</a
+                >
+                <a
+                  href="https://github.com/hamiddashti/earthlab/blob/main/notebooks/00-hd-estimate-nitrogen.ipynb"
+                  target="_blank"
+                  >Code</a
+                >
+                <a
+                  href="https://ieeexplore.ieee.org/document/8633855"
+                  target="_blank"
+                  >Manuscript</a
+                >
+              </div>
+            </div>
+            <div class="project-image">
+              <img
+                src="../images/satellite-remote-sensing.jpg"
+                alt="Project 2"
+              />
+            </div>
+            <!-- Closing tag for Project 2 -->
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-item">
+            <div class="project-info">
+              <h3>Gradually updating projects as I find more time!</h3>
+              <p>
+                Meanwhile, you can check the publications page for more updates.
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="../images/tmp.jpg" alt="Project 3" />
+            </div>
+            <!-- Closing tag for Project 3 -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- footer content here -->
+    </footer>
+  </body>
+</html>
