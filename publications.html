@@ -50,8 +50,8 @@
       <div class="pub-filters" id="filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="published">Published</button>
-        <button class="filter-btn" data-filter="under review">Under Review</button>
-        <button class="filter-btn" data-filter="accepted">Accepted</button>
+        <button class="filter-btn" data-filter="in press">In Press</button>
+        <button class="filter-btn" data-filter="submitted">Submitted</button>
       </div>
 
       <!-- Publication list rendered by JS -->
@@ -79,9 +79,10 @@
 
     function statusLabel(s) {
       const map = {
-        'published':    { text: 'Published',    color: '#16a34a', bg: '#f0fdf4' },
-        'under review': { text: 'Under Review', color: '#d97706', bg: '#fffbeb' },
-        'accepted':     { text: 'Accepted',     color: '#2563eb', bg: '#eff6ff' },
+        'published':  { text: 'Published',  color: '#16a34a', bg: '#f0fdf4' },
+        'in press':   { text: 'In Press',   color: '#2563eb', bg: '#eff6ff' },
+        'submitted':  { text: 'Submitted',  color: '#d97706', bg: '#fffbeb' },
+        'accepted':   { text: 'Accepted',   color: '#7c3aed', bg: '#f5f3ff' },
       };
       return map[s] || { text: s, color: '#64748b', bg: '#f1f5f9' };
     }

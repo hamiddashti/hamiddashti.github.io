@@ -1,34 +1,115 @@
 [
   {
-    "title": "Rethinking Ecosystems Disturbance Recovery: what it was or what it could have been?",
-    "authors": "Dashti, H., Chen, M., Smith, W. K., Zhao, K., & Moore, D. J. P.",
+    "title": "Sensing plant photosynthesis using solar-induced chlorophyll fluorescence: From chloroplasts to the globe",
+    "authors": "Yang, X., Guan, K., Chen, M., Johnson, J. E., Li, R., Kimm, H., Wu, G., Kim, J., Dashti, H., Wang, S., Lerdau, M., Frankenberg, C., & Berry, J. A.",
+    "journal": "Annual Review of Plant Biology",
+    "year": 2026,
+    "doi": "",
+    "url": "",
+    "status": "in press"
+  },
+  {
+    "title": "Tracking seasonal variability in plant traits using spaceborne PRISMA and NEON AOP across forest types and ecoregions",
+    "authors": "Ji, F., Zheng, T., Shiklomanov, A. N., Yang, R., Townsend, P. A., Li, F., Hao, D., Dashti, H., Kovach, K. R., You, H., Zhou, J., & Chen, M.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2026,
+    "doi": "10.1016/j.rse.2025.115149",
+    "url": "https://doi.org/10.1016/j.rse.2025.115149",
+    "status": "published"
+  },
+  {
+    "title": "Unrevealing site-dependent relationship between solar-induced fluorescence and gross primary productivity using the terrestrial ecosystem carbon cycle simulator",
+    "authors": "Liu, H., Pierrat, Z. A., Dashti, H., & Chen, M.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2025,
+    "doi": "10.1016/j.rse.2025.115052",
+    "url": "https://doi.org/10.1016/j.rse.2025.115052",
+    "status": "published"
+  },
+  {
+    "title": "Climate-driven ecosystem productivity changes restructure food systems",
+    "authors": "Dashti, H., Luo, L., Nicholson, C., Chen, M.",
+    "journal": "One Earth (submitted)",
+    "year": 2025,
+    "doi": "10.1101/2025.10.14.682485",
+    "url": "https://doi.org/10.1101/2025.10.14.682485",
+    "status": "submitted"
+  },
+  {
+    "title": "Canopy structure exhibits linear and nonlinear links to biome-level maximum light use efficiency",
+    "authors": "Dashti, H., Chen, M., Hao, D., Yang, X.",
+    "journal": "Ecology Letters",
+    "year": 2025,
+    "doi": "10.1111/ele.70142",
+    "url": "https://doi.org/10.1111/ele.70142",
+    "status": "published"
+  },
+  {
+    "title": "Hyperspectral surface reflectance improves GPP estimation in terrestrial biosphere modeling using model–data fusion",
+    "authors": "Liu, H., Li, F., Dashti, H., Chen, M.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2025,
+    "doi": "10.1016/j.rse.2025.114989",
+    "url": "https://doi.org/10.1016/j.rse.2025.114989",
+    "status": "published"
+  },
+  {
+    "title": "Role of forest carbon change in shaping future land use and land cover change",
+    "authors": "Luo, M., Zhao, X., Hao, D., Bond-Lamberty, B., Daigneault, A., Patel, P. L., Kou-Giesbrecht, S., Reyer, C. P. O., Dashti, H., Chen, M.",
     "journal": "Global Change Biology",
-    "year": 2023,
-    "doi": "",
-    "url": "",
-    "status": "under review"
+    "year": 2025,
+    "doi": "10.1111/gcb.70219",
+    "url": "https://doi.org/10.1111/gcb.70219",
+    "status": "published"
   },
   {
-    "title": "Underestimation of the impact of land cover change on the biophysical environment of the Arctic and Boreal Region of North America",
-    "authors": "Dashti, H., Smith, W. K., Huo, X., Fox, A., Javadian, M., Devine, C. J., Behrangi, A., & Moore, D. J. P.",
-    "journal": "Environmental Research Letters",
-    "year": 2023,
-    "doi": "",
-    "url": "",
-    "status": "under review"
+    "title": "Leveraging transfer learning and leaf spectroscopy for leaf trait prediction with broad spatial, species, and temporal applicability",
+    "authors": "Ji, F., Li, F., Dashti, H., Hao, D., Townsend, P. A., Zheng, T., You, H., Chen, M.",
+    "journal": "Remote Sensing of Environment",
+    "year": 2025,
+    "doi": "10.1016/j.rse.2025.114818",
+    "url": "https://doi.org/10.1016/j.rse.2025.114818",
+    "status": "published"
   },
   {
-    "title": "Applied soft classes and fuzzy confusion in a patchwork semi-arid ecosystem: Stitching together classification techniques to preserve ecologically-meaningful information",
-    "authors": "Enterkine, J., Dashti, H., Caughlin, T. T., & Glenn, N. F.",
+    "title": "Ecosystems Disturbance Recovery: What It Was or What It Could Have Been?",
+    "authors": "Dashti, H., Chen, M., Smith, W. K., Zhao, K., Moore, D. J. P.",
+    "journal": "Geophysical Research Letters",
+    "year": 2024,
+    "doi": "10.1029/2024GL109219",
+    "url": "https://doi.org/10.1029/2024GL109219",
+    "status": "published"
+  },
+  {
+    "title": "Integrating state data assimilation and innovative model parameterization reduces simulated carbon uptake in the Arctic and Boreal region",
+    "authors": "Huo, X., Fox, A. M., Dashti, H., Devine, C., Gallery, W., Smith, W. K., et al.",
+    "journal": "Journal of Geophysical Research: Biogeosciences",
+    "year": 2024,
+    "doi": "10.1029/2024JG008004",
+    "url": "https://doi.org/10.1029/2024JG008004",
+    "status": "published"
+  },
+  {
+    "title": "Unveiling the transferability of PLSR models for leaf trait estimation: lessons from a comprehensive analysis with a novel global dataset",
+    "authors": "Ji, F., Li, F., Hao, D., Shiklomanov, A. N., Yang, X., Townsend, P. A., Dashti, H., Nakaji, T., Kovach, K. R., Liu, H., Luo, M., Chen, M.",
+    "journal": "New Phytologist",
+    "year": 2024,
+    "doi": "10.1111/nph.19807",
+    "url": "https://doi.org/10.1111/nph.19807",
+    "status": "published"
+  },
+  {
+    "title": "Applied soft classes and fuzzy confusion in a patchwork semi-arid ecosystem: stitching together classification techniques to preserve ecologically-meaningful information",
+    "authors": "Enterkine, J., Dashti, H., Caughlin, T. T., Glenn, N. F.",
     "journal": "Remote Sensing of Environment",
     "year": 2023,
     "doi": "",
     "url": "",
-    "status": "accepted"
+    "status": "published"
   },
   {
     "title": "Uncertain spatial pattern of future land use and land cover change and its impacts on terrestrial carbon cycle over the Arctic–Boreal region of North America",
-    "authors": "Luo, M., Li, F., Hao, D., Zhu, Q., Dashti, H., & Chen, M.",
+    "authors": "Luo, M., Li, F., Hao, D., Zhu, Q., Dashti, H., Chen, M.",
     "journal": "Earth's Future",
     "year": 2023,
     "doi": "10.1029/2023EF003648",
@@ -55,7 +136,7 @@
   },
   {
     "title": "Airborne and spaceborne lidar reveal trends and patterns of functional diversity in a semi-arid ecosystem",
-    "authors": "Ilangakoon, N., Glenn, N. F., Schneider, F. D., Dashti, H., Hancock, S., Spaete, L., & Goulden, T.",
+    "authors": "Ilangakoon, N., Glenn, N. F., Schneider, F. D., Dashti, H., Hancock, S., Spaete, L., Goulden, T.",
     "journal": "Frontiers in Remote Sensing",
     "year": 2021,
     "doi": "10.3389/frsen.2021.743320",
@@ -73,7 +154,7 @@
   },
   {
     "title": "Understanding the effect of fire on vegetation composition and gross primary production in a semi-arid shrubland ecosystem using the Ecosystem Demography (EDv2.2) model",
-    "authors": "Pandit, K., Dashti, H., Hudak, A. T., Glenn, N. F., Flores, A. N., & Shinneman, D. J.",
+    "authors": "Pandit, K., Dashti, H., Hudak, A. T., Glenn, N. F., Flores, A. N., Shinneman, D. J.",
     "journal": "Biogeosciences Discussions",
     "year": 2021,
     "doi": "",
@@ -90,8 +171,17 @@
     "status": "published"
   },
   {
-    "title": "Regional-scale dryland vegetation classification with an integrated lidar-hyperspectral approach",
-    "authors": "Dashti, H., Spaete, L., Roberts, D., Enterkine, J., Flores, A. N., Ustin, S. L., & Mitchell, J. J.",
+    "title": "Empirical Methods for Remote Sensing of Nitrogen in Drylands May Lead to Unreliable Interpretation of Ecosystem Function",
+    "authors": "Dashti, H., Glenn, N. F., Ustin, S., Mitchell, J. J., Qi, Y., Ilangakoon, N. T., Flores, A. N., Silván-Cárdenas, J. L., Zhao, K., Spaete, L. P., de Graaff, M.",
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2019,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Regional Scale Dryland Vegetation Classification with an Integrated Lidar-Hyperspectral Approach",
+    "authors": "Dashti, H., Poley, A., Glenn, N. F., Ilangakoon, N., Spaete, L., Roberts, D., Enterkine, J., Flores, A. N., Ustin, S. L., Mitchell, J. J.",
     "journal": "Remote Sensing",
     "year": 2019,
     "doi": "",
@@ -109,7 +199,7 @@
   },
   {
     "title": "Constraining plant functional types in a semi-arid ecosystem with waveform lidar",
-    "authors": "Ilangakoon, N. T., Glenn, N. F., Dashti, H., Painter, T. H., Mikesell, T. D., Spaete, L. P., Mitchell, J. J., & Shannon, K.",
+    "authors": "Ilangakoon, N. T., Glenn, N. F., Dashti, H., Painter, T. H., Mikesell, T. D., Spaete, L. P., Mitchell, J. J., Shannon, K.",
     "journal": "Remote Sensing of Environment",
     "year": 2018,
     "doi": "",
@@ -117,10 +207,28 @@
     "status": "published"
   },
   {
-    "title": "Inversion of a radiative transfer model for estimation of rice canopy chlorophyll content",
-    "authors": "Darvishzadeh, R., Matkan, A. A., & Dashti, A.",
-    "journal": "IEEE Journal of Selected Topics in Earth Observations and Remote Sensing",
+    "title": "Inversion of a Radiative Transfer Model for Estimation of Rice Canopy Chlorophyll Content",
+    "authors": "Darvishzadeh, R., Matkan, A. A., Dashti, A.",
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
     "year": 2011,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Inversion of a Radiative Transfer Model for Estimation of Rice Canopy Chlorophyll Content Using Iterative Optimization and ALOS images",
+    "authors": "Dashti, A., Darvishzadeh, R., Matkan, A., Hajeb, M.",
+    "journal": "Iranian Journal of Remote Sensing and Geography Information System (in Persian)",
+    "year": 2012,
+    "doi": "",
+    "url": "",
+    "status": "published"
+  },
+  {
+    "title": "Estimation of Nitrogen Content in Soybean Using Remote Sensing",
+    "authors": "Shaki, F., Bernard, F., Darvishzadeh, R., Dashti, H.",
+    "journal": "Physical Geography Research Quarterly (in Persian)",
+    "year": 2013,
     "doi": "",
     "url": "",
     "status": "published"
