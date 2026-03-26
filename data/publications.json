@@ -103,8 +103,8 @@
     "authors": "Enterkine, J., Dashti, H., Caughlin, T. T., Glenn, N. F.",
     "journal": "Remote Sensing of Environment",
     "year": 2023,
-    "doi": "",
-    "url": "",
+    "doi": "10.1016/j.rse.2023.113853",
+    "url": "https://doi.org/10.1016/j.rse.2023.113853",
     "status": "published"
   },
   {
@@ -155,10 +155,10 @@
   {
     "title": "Understanding the effect of fire on vegetation composition and gross primary production in a semi-arid shrubland ecosystem using the Ecosystem Demography (EDv2.2) model",
     "authors": "Pandit, K., Dashti, H., Hudak, A. T., Glenn, N. F., Flores, A. N., Shinneman, D. J.",
-    "journal": "Biogeosciences Discussions",
+    "journal": "Biogeosciences",
     "year": 2021,
-    "doi": "",
-    "url": "",
+    "doi": "10.5194/bg-18-2027-2021",
+    "url": "https://doi.org/10.5194/bg-18-2027-2021",
     "status": "published"
   },
   {
@@ -166,8 +166,8 @@
     "authors": "Dashti, H., Pandit, K., Glenn, N. F., Shinneman, D. J., Flerchinger, G. N., Hudak, A. T., de Graaf, M. A., Flores, A., Ustin, S., Ilangakoon, N., & Fellows, A. W.",
     "journal": "Agricultural and Forest Meteorology",
     "year": 2021,
-    "doi": "",
-    "url": "",
+    "doi": "10.1016/j.agrformet.2020.108270",
+    "url": "https://doi.org/10.1016/j.agrformet.2020.108270",
     "status": "published"
   },
   {
@@ -175,8 +175,8 @@
     "authors": "Dashti, H., Glenn, N. F., Ustin, S., Mitchell, J. J., Qi, Y., Ilangakoon, N. T., Flores, A. N., Silván-Cárdenas, J. L., Zhao, K., Spaete, L. P., de Graaff, M.",
     "journal": "IEEE Transactions on Geoscience and Remote Sensing",
     "year": 2019,
-    "doi": "",
-    "url": "",
+    "doi": "10.1109/TGRS.2018.2889318",
+    "url": "https://doi.org/10.1109/TGRS.2018.2889318",
     "status": "published"
   },
   {
@@ -184,8 +184,8 @@
     "authors": "Dashti, H., Poley, A., Glenn, N. F., Ilangakoon, N., Spaete, L., Roberts, D., Enterkine, J., Flores, A. N., Ustin, S. L., Mitchell, J. J.",
     "journal": "Remote Sensing",
     "year": 2019,
-    "doi": "",
-    "url": "",
+    "doi": "10.3390/rs11182141",
+    "url": "https://doi.org/10.3390/rs11182141",
     "status": "published"
   },
   {
@@ -202,8 +202,8 @@
     "authors": "Ilangakoon, N. T., Glenn, N. F., Dashti, H., Painter, T. H., Mikesell, T. D., Spaete, L. P., Mitchell, J. J., Shannon, K.",
     "journal": "Remote Sensing of Environment",
     "year": 2018,
-    "doi": "",
-    "url": "",
+    "doi": "10.1016/j.rse.2018.02.018",
+    "url": "https://doi.org/10.1016/j.rse.2018.02.018",
     "status": "published"
   },
   {
