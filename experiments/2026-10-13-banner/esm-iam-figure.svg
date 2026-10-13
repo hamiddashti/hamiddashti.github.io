@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 204" role="img" aria-labelledby="fig-title fig-desc">
+  <title id="fig-title">Coupling Earth system models and integrated assessment models</title>
+  <desc id="fig-desc">Sunlight drives the atmosphere and vegetation inside an Earth system model (ESM). Atmosphere and vegetation exchange CO2, heat flows to the ocean, litter flows to the soil through decomposition, and soil respiration is a sink. The ESM passes food, water and energy to human systems in an integrated assessment model (IAM), which returns emissions to the atmosphere.</desc>
+  <defs>
+    <!-- Arrowheads: teal for fluxes inside the ESM, maroon for the ESM-IAM coupling -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L10,5 L0,9 z" fill="#5f8791"/>
+    </marker>
+    <marker id="arrow-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L10,5 L0,9 z" fill="#8f2d3c"/>
+    </marker>
+  </defs>
+  <style>
+    text  { font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .node { fill: #ffffff; stroke: #c9d8dc; stroke-width: 1; }
+    .name { font-size: 14px; font-weight: 600; fill: #1f3f47; text-anchor: middle; }
+    .wire { fill: none; stroke: #5f8791; stroke-width: 1.5; }
+    .wire-c { fill: none; stroke: #8f2d3c; stroke-width: 1.8; }
+    .flux { font-size: 12px; fill: #5f7f87; }
+    .flux-c { font-size: 12px; fill: #8f2d3c; }
+    .legend { font-size: 12px; }
+  </style>
+
+  <!-- Model panels and their legends -->
+  <rect x="70" y="36" width="450" height="160" rx="14" fill="#eef4f5"/>
+  <rect x="562" y="36" width="244" height="160" rx="14" fill="#f8eeee"/>
+  <text class="legend" x="86" y="186"><tspan font-weight="700" letter-spacing="1.2" fill="#3d6f7d">ESM</tspan><tspan fill="#5f7f87"> · Earth system model</tspan></text>
+  <text class="legend" x="578" y="186"><tspan font-weight="700" letter-spacing="1.2" fill="#8f2d3c">IAM</tspan><tspan fill="#7d5a60"> · Integrated assessment model</tspan></text>
+
+  <!-- Sun as the source, feeding atmosphere and vegetation through a junction -->
+  <circle cx="30" cy="120" r="16" fill="#f3c995"/>
+  <text class="flux" x="30" y="152" text-anchor="middle">Sun</text>
+  <polyline class="wire" points="46,120 62,120 62,90 90,90" marker-end="url(#arrow)"/>
+  <polyline class="wire" points="62,120 62,150 90,150" marker-end="url(#arrow)"/>
+  <circle cx="62" cy="120" r="2.6" fill="#5f8791"/>
+
+  <!-- Pools -->
+  <rect class="node" x="90"  y="72"  width="150" height="36" rx="8"/><text class="name" x="165" y="95">Atmosphere</text>
+  <rect class="node" x="90"  y="132" width="150" height="36" rx="8"/><text class="name" x="165" y="155">Vegetation</text>
+  <rect class="node" x="340" y="72"  width="150" height="36" rx="8"/><text class="name" x="415" y="95">Ocean</text>
+  <rect class="node" x="340" y="132" width="150" height="36" rx="8"/><text class="name" x="415" y="155">Soil</text>
+  <rect class="node" x="594" y="102" width="180" height="36" rx="8"/><text class="name" x="684" y="125">Human systems</text>
+
+  <!-- Fluxes inside the ESM -->
+  <polyline class="wire" points="165,108 165,132" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="flux" x="174" y="124">CO₂</text>
+  <polyline class="wire" points="240,90 340,90" marker-end="url(#arrow)"/>
+  <text class="flux" x="290" y="83" text-anchor="middle">heat</text>
+  <!-- Litter passes through a resistor: decomposition -->
+  <polyline class="wire" points="240,150 272,150 275,144 280,156 285,144 290,156 295,144 300,156 305,144 308,150 340,150" marker-end="url(#arrow)"/>
+  <text class="flux" x="290" y="138" text-anchor="middle">litter</text>
+  <!-- Ground symbol under the soil: the respiration sink -->
+  <path class="wire" d="M415,168 V176 M403,176 H427 M408,180.5 H422 M412.5,185 H417.5"/>
+  <text class="flux" x="433" y="184">respiration</text>
+
+  <!-- ESM -> IAM coupling: food, water, energy -->
+  <polyline class="wire-c" points="490,90 532,90 532,120 594,120" marker-end="url(#arrow-c)"/>
+  <polyline class="wire-c" points="490,150 532,150 532,120"/>
+  <circle cx="532" cy="120" r="2.8" fill="#8f2d3c"/>
+  <text class="flux-c" x="600" y="96">food, water, energy</text>
+
+  <!-- IAM -> ESM coupling: emissions back to the atmosphere, over the top -->
+  <polyline class="wire-c" points="750,102 750,18 200,18 200,72" marker-end="url(#arrow-c)"/>
+  <text class="flux-c" x="475" y="12" text-anchor="middle">emissions</text>
+</svg>

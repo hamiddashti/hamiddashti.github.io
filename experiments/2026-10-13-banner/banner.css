@@ -2,10 +2,20 @@
    At promotion: copy banner-earth.svg to images/ and move this rule into css/style.css
    (with the url changed to ../images/banner-earth.svg). */
 
-/* Show the banner's full height and crop only left/right, so the sky stays visible.
-   57% instead of centre: the sun, diagram and satellite sit slightly right of the middle. */
+/* The user's latest static banner (banner-earth.svg, 14:25): the modern diagram, sun and
+   satellite with its swath, no animation. Full height is always shown and only the sides are
+   cropped; 54% centres the composition, which sits slightly right of the middle, so it all
+   fits from about 1000 px wide upward. */
 .banner {
-  /* Temporarily showing the user's animated version. To switch back, swap the two url() lines. */
-  background: #f6e9dc url(banner-earth-animated.svg) 57% bottom / auto 100% no-repeat;
-  /* background: #f6e9dc url(banner-earth.svg) 57% bottom / auto 100% no-repeat; */
+  background: #f6e9dc url(banner-earth.svg) 54% bottom / auto 100% no-repeat;
+}
+
+/* Research figure (trial): the ESM/IAM diagram as a figure under the Research heading.
+   On phones it keeps a readable size and scrolls sideways instead of shrinking. */
+.research-figure { margin: 0.25rem 0 1.75rem; }
+.research-figure img { width: 100%; height: auto; }
+.research-figure figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+@media (max-width: 640px) {
+  .research-figure { overflow-x: auto; }
+  .research-figure img { min-width: 620px; }
 }

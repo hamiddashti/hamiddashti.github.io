@@ -25,4 +25,16 @@ This folder was deleted by mistake right after promotion and rebuilt the same da
 
 **Animated version (temporary):** the user made `banner-earth-animated.svg` from their re-saved `banner-earth.svg` (13:53). It moves a dot along a 12 s looping path with a fade, using plain SVG animation (no scripts). It was promoted to `images/banner-earth-animated.svg` and put live on the site temporarily. The static line is kept commented out in `css/style.css`. The re-saved static `banner-earth.svg` was copied to `images/` as well.
 
+**Version 3 (trial, not live):** the user's wife found the banner "too 90s". The boxed diagram with labels inside a banner is what dates it.
+- `banner-earth-animated3.svg`: the user's `banner-earth-animated2.svg` with the diagram groups and the dashed sun-satellite line removed, and nothing else changed. It keeps the ridges, sun, sunbeam, canopy scattering, the photon (still hidden when motion is turned off) and the satellite. Cropped at 70%, so the sun and satellite sit either side of the page centre, and phones show the satellite and photon.
+- `esm-iam-figure.svg`: the diagram as a figure under the Research heading. Soft tinted panels instead of dashed frames: teal for the ESM, maroon for the IAM. Sentence-case labels, the groups spelled out, coupling arrows in maroon, and the resistor and ground symbol kept, with "respiration" labelled. On phones it scrolls sideways at a readable size.
+- The `banner.css` rules for both are trial-only. At promotion they move into `css/style.css`.
+
+**Version 4 (trial, not live):** the user uploaded their own `banner-earth-animated3.svg` (14:19), which has a new, modern diagram in the banner: labels on soft translucent ESM/IAM panels and curved flow arrows, with no boxes. They asked to stop the animation and drop the photon paths, keeping the remote sensing and the new diagram.
+- `banner-earth-rs.svg`: their animated3 with the photon, sunbeam, canopy scatter lines and dots, the line up to the sensor, and the dashed sun-satellite line and its dot removed. It has no animation. It keeps the diagram, sun, orbit, satellite, swath cone and footprint glow. Centred crop.
+- Width note: everything fits from about 1200 px wide up. Narrower windows (e.g. a VS Code pane, about 1000 px) cut off "Human systems" and the satellite. Phones show the ESM part and the sun.
+- `esm-iam-figure.svg` is still in the Research section of the trial page. With the diagram back in the banner it duplicates it, so decide whether to keep it.
+
+**Version 5, current (trial, not live):** the user tidied this folder at 14:24. They deleted the animated, animated2, animated3, rs and boreal SVGs and saved their latest static banner as `banner-earth.svg` (14:25). It has the modern diagram (moved right), the sun moved in closer, and the satellite with its swath and footprint moved in closer. There is no animation. `banner.css` now uses it at a 54% crop, and the whole composition fits from about 1000 px wide upward. The deleted animated2, animated3 and rs files had never been committed. The animated and boreal ones are in git (commit 8d4eb0e).
+
 **Notebook:** lab/notebook/2026-10.md, entry 2026-10-13

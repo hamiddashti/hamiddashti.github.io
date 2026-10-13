@@ -103,16 +103,13 @@ nav {
 }
 
 /* ---------- Banner (homepage) ---------- */
-/* Forested ridges, an Earth-observing satellite and an ESM/IAM wiring diagram
-   (images/banner-earth.svg, hand-edited in Inkscape; see scripts/make_banner.py).
-   Full height is always shown and only the sides are cropped, around 57% because
-   the sun, diagram and satellite sit slightly right of the middle. */
+/* Forested ridges, a modern ESM/IAM diagram, the sun and an Earth-observing satellite with its
+   swath (images/banner-earth.svg, the user's own Inkscape version; built in
+   experiments/2026-10-13-banner). Full height is always shown and only the sides are cropped;
+   54% centres the composition, which sits slightly right of the middle. */
 .banner {
   height: 230px;
-  /* Temporarily the animated version (the user's banner-earth-animated.svg). To go back to
-     the static banner, swap the two lines below. */
-  background: #f6e9dc url(../images/banner-earth-animated.svg) 57% bottom / auto 100% no-repeat;
-  /* background: #f6e9dc url(../images/banner-earth.svg) 57% bottom / auto 100% no-repeat; */
+  background: #f6e9dc url(../images/banner-earth.svg) 54% bottom / auto 100% no-repeat;
 }
 
 /* ---------- About / Index ---------- */
