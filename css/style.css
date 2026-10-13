@@ -109,7 +109,10 @@ nav {
    the sun, diagram and satellite sit slightly right of the middle. */
 .banner {
   height: 230px;
-  background: #f6e9dc url(../images/banner-earth.svg) 57% bottom / auto 100% no-repeat;
+  /* Temporarily the animated version (the user's banner-earth-animated.svg). To go back to
+     the static banner, swap the two lines below. */
+  background: #f6e9dc url(../images/banner-earth-animated.svg) 57% bottom / auto 100% no-repeat;
+  /* background: #f6e9dc url(../images/banner-earth.svg) 57% bottom / auto 100% no-repeat; */
 }
 
 /* ---------- About / Index ---------- */

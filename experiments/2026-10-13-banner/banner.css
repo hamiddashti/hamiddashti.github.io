@@ -1,0 +1,11 @@
+/* Banner trial: overrides .banner from ../../css/style.css.
+   At promotion: copy banner-earth.svg to images/ and move this rule into css/style.css
+   (with the url changed to ../images/banner-earth.svg). */
+
+/* Show the banner's full height and crop only left/right, so the sky stays visible.
+   57% instead of centre: the sun, diagram and satellite sit slightly right of the middle. */
+.banner {
+  /* Temporarily showing the user's animated version. To switch back, swap the two url() lines. */
+  background: #f6e9dc url(banner-earth-animated.svg) 57% bottom / auto 100% no-repeat;
+  /* background: #f6e9dc url(banner-earth.svg) 57% bottom / auto 100% no-repeat; */
+}

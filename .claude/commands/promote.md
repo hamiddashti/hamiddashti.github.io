@@ -30,5 +30,6 @@ Arguments: $ARGUMENTS. Find the experiment under `experiments/` (match on the sl
 5. Set the experiment's Outcome to `promoted (deep) → <path>`.
 
 **Both modes**
+- Never delete or move the experiment folder. It stays as the record of how the change was made; only its `NOTES.md` Outcome changes. Commit it along with the promotion.
 - If the promotion changes what visitors see, it gets a notebook entry. Once it is pushed live, it also gets a RESULTS.md row.
 - Offer to commit on the working branch (`develop`, if that is the policy). Don't push. Give the user the push or merge command, and say what will change on the live site.

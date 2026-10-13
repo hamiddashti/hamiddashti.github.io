@@ -12,7 +12,7 @@ logs/
 _site/
 .jekyll-cache/
 
-# Experiments stay text-only: screenshots, exports and renders are not committed.
+# Experiments: screenshots and photo exports are not committed. SVGs are (they are source work).
 # Site images in images/ and files/ ARE committed, because they are the site.
 # To keep one experiment file anyway: git add -f <path>
 experiments/**/*.png
@@ -20,7 +20,6 @@ experiments/**/*.jpg
 experiments/**/*.jpeg
 experiments/**/*.gif
 experiments/**/*.webp
-experiments/**/*.svg
 experiments/**/*.pdf
 experiments/**/*.zip
 experiments/**/*.parquet

@@ -35,7 +35,7 @@ The change is live a minute or two after the push. `publications.html` and `proj
 | `CLAUDE.md`, `STATE.md` | This guide and the rolling status. Both are auto-loaded |
 | `ROADMAP.md` | Milestones and the fix list |
 | `DATA.md` | Where each piece of content comes from: CV source, photos, publication list, analytics |
-| `experiments/YYYY-MM-DD-slug/` | One trial at a time. Each has its own `index.html` (assets via `../../`, plus a small CSS override), which the user opens in VS Code. Promote to root when approved |
+| `experiments/YYYY-MM-DD-slug/` | One trial at a time. Each has its own `index.html` (assets via `../../`, plus a small CSS override), which the user opens in VS Code. Promote to root when approved. **Never delete an experiment folder, even after promotion.** Mark it promoted in its `NOTES.md` and commit it |
 | `lab/notebook/` | Monthly session log, append-only |
 | `lab/decisions/` | Numbered decision records and their index |
 | `results/RESULTS.md` | Manifest of changes that went live |
