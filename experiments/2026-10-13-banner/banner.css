@@ -10,12 +10,3 @@
   background: #f6e9dc url(banner-earth.svg) 54% bottom / auto 100% no-repeat;
 }
 
-/* Research figure (trial): the ESM/IAM diagram as a figure under the Research heading.
-   On phones it keeps a readable size and scrolls sideways instead of shrinking. */
-.research-figure { margin: 0.25rem 0 1.75rem; }
-.research-figure img { width: 100%; height: auto; }
-.research-figure figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
-@media (max-width: 640px) {
-  .research-figure { overflow-x: auto; }
-  .research-figure img { min-width: 620px; }
-}

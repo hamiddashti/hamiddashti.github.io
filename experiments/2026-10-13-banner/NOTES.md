@@ -37,4 +37,6 @@ This folder was deleted by mistake right after promotion and rebuilt the same da
 
 **Version 5, current (trial, not live):** the user tidied this folder at 14:24. They deleted the animated, animated2, animated3, rs and boreal SVGs and saved their latest static banner as `banner-earth.svg` (14:25). It has the modern diagram (moved right), the sun moved in closer, and the satellite with its swath and footprint moved in closer. There is no animation. `banner.css` now uses it at a 54% crop, and the whole composition fits from about 1000 px wide upward. The deleted animated2, animated3 and rs files had never been committed. The animated and boreal ones are in git (commit 8d4eb0e).
 
+**Research figure dropped:** the user removed the ESM/IAM figure from the Research section (the diagram is in the banner instead). `esm-iam-figure.svg` stays in this folder as a record; it was never on the live site.
+
 **Notebook:** lab/notebook/2026-10.md, entry 2026-10-13

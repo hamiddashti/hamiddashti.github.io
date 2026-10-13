@@ -1,5 +1,5 @@
 /* ============================================================
-   Hamid Dashti — Personal Website
+   Hamid Dashti: Personal Website
    style.css  |  Clean & Minimal
    ============================================================ */
 
@@ -87,7 +87,7 @@ nav {
 .nav-links a:hover,
 .nav-links a.active { color: var(--accent); text-decoration: none; }
 
-/* hamburger — hidden on desktop */
+/* hamburger, hidden on desktop */
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
 .nav-toggle span {
   display: block; width: 22px; height: 2px;

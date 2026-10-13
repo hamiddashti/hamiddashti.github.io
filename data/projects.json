@@ -11,7 +11,7 @@
     ]
   },
   {
-    "title": "Dryland Vegetation Classification — LiDAR + Hyperspectral",
+    "title": "Dryland Vegetation Classification: LiDAR + Hyperspectral",
     "description": "Regional-scale classification of dryland vegetation in the northern Great Basin using an integrated LiDAR and hyperspectral approach. Airborne data were combined with machine learning classifiers to map plant functional types.",
     "tags": ["LiDAR", "Hyperspectral", "Machine Learning", "Dryland"],
     "image": "images/satellite-remote-sensing.jpg",
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "title": "Interactive Map — Example",
+    "title": "Interactive Map: Example",
     "description": "An example of an embedded interactive Leaflet map. Replace the 'embed' field with a URL to your hosted map (e.g., a GitHub Pages map, Google Earth Engine app, or ArcGIS Online app).",
     "tags": ["Interactive", "Leaflet", "Geospatial"],
     "image": "",
