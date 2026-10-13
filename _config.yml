@@ -1,0 +1,15 @@
+# GitHub Pages runs Jekyll on this repo. The site's HTML pages have no front
+# matter, so Jekyll copies them unchanged. This file has one job: list the
+# repo files that must NOT be published to hamiddashti.github.io.
+# Names starting with "_" or "." (_backup/, .claude/, .gitignore) are already
+# skipped by Jekyll. Add any new root-level notes file here.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - STATE.md
+  - ROADMAP.md
+  - DATA.md
+  - lab/
+  - results/
+  - experiments/
+  - scripts/

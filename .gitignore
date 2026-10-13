@@ -1,0 +1,29 @@
+# OS and editor files
+.DS_Store
+.vscode/
+
+# Python helper scripts and notebooks
+__pycache__/
+.ipynb_checkpoints/
+*.log
+logs/
+
+# Local Jekyll build output (only if `jekyll serve` is ever run locally)
+_site/
+.jekyll-cache/
+
+# Experiments stay text-only: screenshots, exports and renders are not committed.
+# Site images in images/ and files/ ARE committed, because they are the site.
+# To keep one experiment file anyway: git add -f <path>
+experiments/**/*.png
+experiments/**/*.jpg
+experiments/**/*.jpeg
+experiments/**/*.gif
+experiments/**/*.webp
+experiments/**/*.svg
+experiments/**/*.pdf
+experiments/**/*.zip
+experiments/**/*.parquet
+
+# Claude Code per-machine settings
+.claude/settings.local.json

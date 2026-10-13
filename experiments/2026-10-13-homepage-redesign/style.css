@@ -1,0 +1,161 @@
+/* ============================================================
+   Homepage redesign trial: experiments/2026-10-13-homepage-redesign
+   This is a self-contained copy, so the live css/style.css is untouched.
+   ============================================================ */
+
+/* ---------- Tokens ---------- */
+:root {
+  --text:        #1f2328;
+  --text-soft:   #3a414a;
+  --muted:       #5b6470;
+  --rule:        #e6e8eb;
+  --accent:      #0f6466;   /* deep teal; change this one value for a different feel */
+  --accent-soft: #e9f3f2;
+  --bg:          #ffffff;
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --sans:  'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --width: 780px;
+  --nav-h: 3.5rem;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 1rem); }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+img { display: block; max-width: 100%; }
+.wrap { max-width: var(--width); margin: 0 auto; padding: 0 1.5rem; }
+.muted { color: var(--muted); }
+
+/* ---------- Nav ---------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--rule);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); }
+.nav-name { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; color: var(--text); }
+.nav-name:hover { text-decoration: none; color: var(--accent); }
+.site-nav nav { display: flex; gap: 1.6rem; }
+.site-nav nav a { color: var(--muted); font-size: 0.93rem; font-weight: 500; }
+.site-nav nav a:hover { color: var(--accent); text-decoration: none; }
+
+/* ---------- Intro ---------- */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 3.5rem 0 1.25rem;
+}
+.intro h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
+}
+.position { color: var(--muted); margin: 0 0 1.1rem; line-height: 1.5; }
+.position a { color: inherit; }
+.lead { font-size: 1.1rem; color: var(--text); margin: 0 0 1.2rem; }
+.links { display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; margin: 0; font-weight: 500; font-size: 0.95rem; }
+.intro-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
+
+.about p { color: var(--text-soft); margin: 0; }
+
+/* ---------- Sections ---------- */
+section { padding: 1.25rem 0; }
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin: 1.25rem 0 1.25rem;
+}
+.section-head h2 { font-family: var(--serif); font-weight: 600; font-size: 1.5rem; line-height: 1.25; margin: 0; }
+.section-head a { font-size: 0.92rem; font-weight: 500; white-space: nowrap; }
+
+/* ---------- Research themes ---------- */
+.themes { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem; align-items: start; }  /* start: each accent bar only as tall as its own text */
+.theme { border-left: 3px solid var(--accent); padding-left: 1rem; }
+.theme h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.35rem; line-height: 1.35; }
+.theme p { margin: 0 0 0.5rem; font-size: 0.94rem; color: var(--text-soft); }
+.theme .theme-papers { font-size: 0.88rem; color: var(--muted); margin: 0; }
+.tools { margin: 1.5rem 0 0; font-size: 0.88rem; color: var(--muted); }
+.tools strong { color: var(--text); font-weight: 600; }
+
+/* ---------- Publications ---------- */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.pub:last-child { border-bottom: none; }
+.pub-year { color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; padding-top: 0.05rem; }
+.pub-title { font-weight: 600; line-height: 1.4; margin-bottom: 0.2rem; }
+.pub-title a { color: var(--text); }
+.pub-title a:hover { color: var(--accent); }
+.pub-authors { font-size: 0.9rem; color: var(--muted); }
+.pub-authors strong { color: var(--text); font-weight: 600; }
+.pub-venue { font-size: 0.9rem; color: var(--text-soft); }
+.badge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: capitalize;
+}
+.more { font-size: 0.92rem; color: var(--muted); margin: 0.75rem 0 0; }
+
+/* ---------- Projects ---------- */
+.projects { display: flex; flex-direction: column; gap: 1.25rem; }
+.project { display: grid; grid-template-columns: 150px 1fr; gap: 1.25rem; align-items: start; }
+.project-thumb { width: 150px; height: 100px; object-fit: cover; border-radius: 6px; background: var(--accent-soft); }
+.project h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.25rem; line-height: 1.35; }
+.project p { margin: 0 0 0.35rem; font-size: 0.92rem; color: var(--text-soft); }
+.project .project-links { font-size: 0.9rem; font-weight: 500; }
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 2.5rem;
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .nav-name { display: none; }              /* the name is already the page heading */
+  .site-nav nav { width: 100%; justify-content: space-between; gap: 0; }
+  .intro { grid-template-columns: 1fr; gap: 1.25rem; padding-top: 2rem; }
+  .intro-photo { order: -1; width: 112px; height: 112px; }
+  .intro h1 { font-size: 2.1rem; }
+  .themes { grid-template-columns: 1fr; }
+  .project { grid-template-columns: 96px 1fr; gap: 0.9rem; }
+  .project-thumb { width: 96px; height: 72px; }
+}

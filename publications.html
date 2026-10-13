@@ -50,8 +50,7 @@
       <div class="pub-filters" id="filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="published">Published</button>
-        <button class="filter-btn" data-filter="in press">In Press</button>
-        <button class="filter-btn" data-filter="submitted">Submitted</button>
+        <button class="filter-btn" data-filter="preprint">Preprints</button>
       </div>
 
       <!-- Publication list rendered by JS -->
@@ -66,7 +65,7 @@
   <footer>
     <div class="container">
       © <span id="yr"></span> Hamid Dashti ·
-      <a href="mailto:ahangar.hamid@gmail.com">ahangar.hamid@gmail.com</a>
+      <a href="mailto:hdashti@uchicago.edu">hdashti@uchicago.edu</a>
     </div>
   </footer>
 
@@ -83,6 +82,7 @@
         'in press':   { text: 'In Press',   color: '#2563eb', bg: '#eff6ff' },
         'submitted':  { text: 'Submitted',  color: '#d97706', bg: '#fffbeb' },
         'accepted':   { text: 'Accepted',   color: '#7c3aed', bg: '#f5f3ff' },
+        'preprint':   { text: 'Preprint',   color: '#d97706', bg: '#fffbeb' },
       };
       return map[s] || { text: s, color: '#64748b', bg: '#f1f5f9' };
     }
@@ -104,7 +104,7 @@
             <div class="pub-authors">${p.authors}</div>
             <div class="pub-meta">
               <span class="pub-year-badge">${p.year}</span>
-              <span><em>${p.journal}</em></span>
+              <span><em>${p.journal}</em>${p.volume ? ', ' + p.volume : ''}</span>
               <span style="
                 background:${s.bg}; color:${s.color};
                 font-size:0.75rem; font-weight:600;
