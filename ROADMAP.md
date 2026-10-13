@@ -28,10 +28,13 @@ File-based memory, plus a `_config.yml` that keeps the notes off the live site. 
 
 ## M3 — Clean up and format the current design (the user's priority)
 The user keeps the current design (2026-10-13). They rejected the reference sites and the mockup in `experiments/2026-10-13-homepage-redesign/` (dead end). The formatting items are still to be agreed with the user:
+- [x] Homepage: Skills section removed. "Selected Publications" now shows the records marked `"selected": true` in `data/publications.json` (6 first-author papers). The card markup is shared between both pages in `js/pubs.js` (2026-10-13, uncommitted).
+- [x] Banner (2026-10-13): forested ridges, satellite with imaging swath, and an ESM/IAM wiring diagram. Built in an experiment, hand-edited by the user in Inkscape, promoted to `images/banner-earth.svg`. Maroon accent palette and photo overlapping the banner.
+- [ ] Remove the now-unused `.skills-grid` rule from `css/style.css`.
 - [ ] Inline `style=` attributes into classes in `css/style.css`.
 - [ ] Publications:
   - the owner's name in bold
-  - a badge only for preprints, maybe
+  - [x] badge only for non-published entries; the "Published" label is removed everywhere (2026-10-13, uncommitted)
   - no renumbering when filtered (`publications.html:103`)
 - [ ] Projects: real content from the user, then put Projects back in the nav.
 - [ ] Page description, link-preview (Open Graph) tags and a favicon.

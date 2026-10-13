@@ -46,7 +46,8 @@
     "year": 2025,
     "doi": "10.1111/ele.70142",
     "url": "https://doi.org/10.1111/ele.70142",
-    "status": "published"
+    "status": "published",
+    "selected": true
   },
   {
     "title": "Hyperspectral surface reflectance improves GPP estimation in terrestrial biosphere modeling using model–data fusion",
@@ -86,7 +87,8 @@
     "year": 2024,
     "doi": "10.1029/2024GL109219",
     "url": "https://doi.org/10.1029/2024GL109219",
-    "status": "published"
+    "status": "published",
+    "selected": true
   },
   {
     "title": "Integrating state data assimilation and innovative model parameterization reduces simulated carbon uptake in the Arctic and Boreal region",
@@ -134,7 +136,8 @@
     "year": 2022,
     "doi": "10.1088/1748-9326/ac8da7",
     "url": "https://doi.org/10.1088/1748-9326/ac8da7",
-    "status": "published"
+    "status": "published",
+    "selected": true
   },
   {
     "title": "Assimilation of global satellite leaf area estimates reduces modeled global carbon uptake and energy loss by terrestrial ecosystems",
@@ -183,7 +186,8 @@
     "year": 2021,
     "doi": "10.1016/j.agrformet.2020.108270",
     "url": "https://doi.org/10.1016/j.agrformet.2020.108270",
-    "status": "published"
+    "status": "published",
+    "selected": true
   },
   {
     "title": "Empirical Methods for Remote Sensing of Nitrogen in Drylands May Lead to Unreliable Interpretation of Ecosystem Function",
@@ -193,7 +197,8 @@
     "year": 2019,
     "doi": "10.1109/TGRS.2018.2889318",
     "url": "https://doi.org/10.1109/TGRS.2018.2889318",
-    "status": "published"
+    "status": "published",
+    "selected": true
   },
   {
     "title": "Regional Scale Dryland Vegetation Classification with an Integrated Lidar-Hyperspectral Approach",
@@ -203,7 +208,8 @@
     "year": 2019,
     "doi": "10.3390/rs11182141",
     "url": "https://doi.org/10.3390/rs11182141",
-    "status": "published"
+    "status": "published",
+    "selected": true
   },
   {
     "title": "Developing and optimizing shrub parameters representing sagebrush (Artemisia spp.) ecosystems in the northern Great Basin using the Ecosystem Demography (EDv2.2) model",

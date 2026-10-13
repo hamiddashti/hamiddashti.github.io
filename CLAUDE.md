@@ -35,11 +35,11 @@ The change is live a minute or two after the push. `publications.html` and `proj
 | `CLAUDE.md`, `STATE.md` | This guide and the rolling status. Both are auto-loaded |
 | `ROADMAP.md` | Milestones and the fix list |
 | `DATA.md` | Where each piece of content comes from: CV source, photos, publication list, analytics |
-| `experiments/YYYY-MM-DD-slug/` | One sandbox per design or content trial, each with a `NOTES.md` |
+| `experiments/YYYY-MM-DD-slug/` | One trial at a time. Each has its own `index.html` (assets via `../../`, plus a small CSS override), which the user opens in VS Code. Promote to root when approved |
 | `lab/notebook/` | Monthly session log, append-only |
 | `lab/decisions/` | Numbered decision records and their index |
 | `results/RESULTS.md` | Manifest of changes that went live |
-| `scripts/` | Helper scripts such as image resizing or link checks. None exist yet |
+| `scripts/` | Helper scripts. `make_banner.py` draws `images/banner-*.svg`; `config.py` holds default paths |
 | `.claude/commands/`, `.claude/agents/` | Slash commands and the read-only check agents |
 
 ## Session protocol
@@ -66,7 +66,7 @@ The change is live a minute or two after the push. `publications.html` and `proj
 - Images: resize before committing. The 160 px avatar needs about 480 px. Keep each image under about 300 KB, and give every `<img>` a real `alt` text.
 - Links that open a new tab use `target="_blank" rel="noopener"`.
 
-**Helper scripts (`scripts/`, once any exist)**
+**Helper scripts (`scripts/`)**
 - Python and PEP 8, with a docstring on every function and comments on non-trivial logic.
 - Paths are function arguments, and their defaults live in one module, `scripts/config.py`. Nothing is hard-wired.
 - Writes are atomic: write to `.tmp`, then rename. Entrypoints are idempotent: skip if the output exists.
@@ -91,16 +91,17 @@ There is no lockfile yet because the site has no dependencies. If a script or bu
 ## Environment
 
 - Nothing to install or activate. You only need a browser, plus Python 3 for the local server.
-- Preview: run `python3 -m http.server 8000` from the repo root and open http://localhost:8000. Check each changed page at desktop width and at about 375 px wide (browser devtools, device mode).
+- **How the user reviews changes:** they open an `index.html` in VS Code and view it rendered. For visual changes, work in one `experiments/` folder with its own `index.html` and promote to root when the user approves. Small text or data fixes can go straight into the root files. Don't make several variants to choose between, and don't put screenshots in replies. A quick check of your own is fine.
+- Local server, if you need one for your own check: `python3 -m http.server 8000` from the repo root, then http://localhost:8000. Pages that fetch JSON need a server.
 - Publish: merge `develop` into `main` and push `main`. The change is live in about 1–2 minutes. If it isn't, look at the repo's Actions tab ("pages build and deployment").
-- Test small first. Preview the changed page locally and run the `site-check` agent on it before publishing. Build larger changes (a new layout or page) in `experiments/`, then `/promote` them.
+- Small, reversible steps. Commit on `develop` when the user is happy, so a change can be undone. Run the `site-check` agent before publishing.
 - Local preview ignores `_config.yml`, so excluded files open locally even though they aren't published.
 - The CV (`files/CV.pdf`) is the source for the site's text. poppler isn't installed, so extract its text with macOS PDFKit:
   `osascript -l JavaScript -e 'ObjC.import("PDFKit"); var d=$.PDFDocument.alloc.initWithURL($.NSURL.fileURLWithPath("files/CV.pdf")); var o=[]; for (var i=0;i<d.pageCount;i++) o.push(d.pageAtIndex(i).string.js); o.join("\n")'`
 
 ## Standing behaviors
 
-- Never push to `main` or publish in any other way yourself. Prepare the commit, the push command and a one-line note on what will change on the live site. The user pushes.
+- Push to `main` (publish) only when the user explicitly asks in that conversation. Otherwise prepare the commit, the push command and a one-line note on what will change on the live site.
 - While `/code` is active, hand back cells and don't apply them.
 - Treat the external tools and services the user names as accepted (none named yet). Don't propose auditing or replacing them.
 - Before acting on a recalled note, verify that the file or function it names still exists.

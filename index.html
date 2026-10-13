@@ -34,6 +34,9 @@
     </div>
   </nav>
 
+  <!-- ===== BANNER ===== -->
+  <div class="banner" role="img" aria-label="Illustration of layered forested ridges"></div>
+
   <!-- ===== HERO / ABOUT ===== -->
   <main>
     <div class="container">
@@ -50,7 +53,12 @@
         <div>
           <h1 class="about-name">Hamid Dashti</h1>
           <p class="about-title">
-            Geospatial Computational Scientist · Research Computing Center · University of Chicago
+            Geospatial Computational Scientist<br />
+            Research Computing Center, University of Chicago
+          </p>
+          <p class="about-lead">
+            I study how ecosystems respond to disturbance and climate change, from leaves to the globe,
+            using remote sensing, Earth system models, and geospatial AI.
           </p>
 
           <div class="about-tags">
@@ -93,24 +101,24 @@
       <div class="about-section">
         <h2>About Me</h2>
         <p>
-          I am a geospatial computational scientist working at the intersection of remote sensing,
-          Earth system modeling, and data science. I am currently a Geospatial Computational Scientist
+          I am a geospatial computational scientist working at the intersection of <strong>remote sensing,
+          Earth system modeling, and data science</strong>. I am currently a Geospatial Computational Scientist
           at the Research Computing Center, University of Chicago, where I am the lead computational
-          scientist on three funded projects spanning environmental science, biomedicine, and
+          scientist on <strong>three funded projects</strong> spanning environmental science, biomedicine, and
           human–environment interactions. Previously, I was a postdoctoral research associate at the
           University of Wisconsin–Madison (2021–2025) and the University of Arizona (2019–2021), and I
           earned my Ph.D. in Geosciences at Boise State University.
         </p>
         <p>
-          My work spans from leaf-level photosynthesis to global carbon and food systems,
+          My work spans from <strong>leaf-level photosynthesis to global carbon and food systems</strong>,
           always asking how ecosystems are connected with Earth and human systems.
-          I contributed to algorithm development for NASA's Surface Biology and Geology mission,
+          I contributed to algorithm development for <strong>NASA's Surface Biology and Geology mission</strong>,
           conceived and wrote a funded NASA ROSES proposal ($830K) on dryland ephemeral vegetation
           using PACE hyperspectral imaging, and have secured and contributed to over $1M in funded research.
         </p>
         <p>
-          At UChicago, I established a nudged CESM2 modeling capability on the university's HPC,
-          am developing retrieval methods for NASA PACE hyperspectral imagery, and lead the geospatial AI
+          At UChicago, I established a <strong>nudged CESM2 modeling capability</strong> on the university's HPC,
+          am developing retrieval methods for <strong>NASA PACE hyperspectral imagery</strong>, and lead the geospatial AI
           component of a university initiative on AI-driven discovery in human–environment interaction.
           I have designed and taught workshops on Earth system modeling and scalable geospatial analysis,
           and I founded and advised the UChicago Space Program TORCH student team, runner-up in the NASA
@@ -161,59 +169,12 @@
       </div>
 
       <div class="about-section">
-        <h2>Skills</h2>
-        <p style="font-size:0.88rem; color:#64748b; margin-bottom:0.75rem;">
-          <strong>Earth System &amp; Ecological Modeling</strong>
-        </p>
-        <div class="skills-grid" style="margin-bottom:1rem;">
-          <span class="tag">CESM / CLM</span>
-          <span class="tag">E3SM</span>
-          <span class="tag">ED2 / SiB</span>
-          <span class="tag">GCAM</span>
-          <span class="tag">Radiative Transfer (PROSAIL, DART)</span>
-          <span class="tag">Data Assimilation</span>
-          <span class="tag">Time-Series &amp; Disturbance Detection</span>
-          <span class="tag">Change Attribution</span>
+        <h2>Selected Publications</h2>
+        <!-- Rendered from data/publications.json: the records with "selected": true -->
+        <div class="pub-list" id="selected-pubs">
+          <p class="text-muted">Loading publications…</p>
         </div>
-        <p style="font-size:0.88rem; color:#64748b; margin-bottom:0.75rem;">
-          <strong>Remote Sensing &amp; Environmental Sensing</strong>
-        </p>
-        <div class="skills-grid" style="margin-bottom:1rem;">
-          <span class="tag">Hyperspectral</span>
-          <span class="tag">Multispectral</span>
-          <span class="tag">LiDAR / GEDI</span>
-          <span class="tag">SIF (OCO-2)</span>
-          <span class="tag">UAV / Airborne</span>
-          <span class="tag">TLS</span>
-          <span class="tag">Plant Physiology Instruments (LI-COR)</span>
-          <span class="tag">Field Campaign Design</span>
-        </div>
-        <p style="font-size:0.88rem; color:#64748b; margin-bottom:0.75rem;">
-          <strong>Programming &amp; Scalable Computing</strong>
-        </p>
-        <div class="skills-grid" style="margin-bottom:1rem;">
-          <span class="tag">Python</span>
-          <span class="tag">R</span>
-          <span class="tag">Shell</span>
-          <span class="tag">HPC / HTC</span>
-          <span class="tag">xarray / Dask</span>
-          <span class="tag">GDAL</span>
-          <span class="tag">TensorFlow</span>
-          <span class="tag">Microsoft Planetary Computer</span>
-          <span class="tag">STAC / Zarr</span>
-          <span class="tag">Jupyter / Git</span>
-        </div>
-        <p style="font-size:0.88rem; color:#64748b; margin-bottom:0.75rem;">
-          <strong>AI &amp; Machine Learning</strong>
-        </p>
-        <div class="skills-grid">
-          <span class="tag">Random Forest</span>
-          <span class="tag">PLSR</span>
-          <span class="tag">SVM</span>
-          <span class="tag">Bayesian Regression</span>
-          <span class="tag">Deep Learning</span>
-          <span class="tag">Geospatial AI</span>
-        </div>
+        <p class="mt-2"><a href="publications.html">See all publications →</a></p>
       </div>
 
     </div>
@@ -228,6 +189,22 @@
   </footer>
 
   <script src="js/nav.js"></script>
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/pubs.js"></script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ── Selected publications ─────────────────────────────────────────
+    // Show the records marked "selected": true, newest first (card markup comes from js/pubs.js).
+    fetch('data/publications.json')
+      .then(r => r.json())
+      .then(data => {
+        const selected = data.filter(p => p.selected).sort((a, b) => b.year - a.year);
+        document.getElementById('selected-pubs').innerHTML = selected.map(p => pubCardHtml(p)).join('');
+      })
+      .catch(() => {
+        document.getElementById('selected-pubs').innerHTML =
+          '<p class="text-muted">Could not load publications.</p>';
+      });
+  </script>
 </body>
 </html>
